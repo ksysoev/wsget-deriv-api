@@ -1,0 +1,946 @@
+version: "1"
+domains:
+    - derivws.com
+    - binaryws.com
+    - deriv.dev
+macro:
+    active_symbols:
+        - |-
+          edit {
+              "active_symbols": "brief",
+              "product_type": "basic"
+          }
+    api_token:
+        - |-
+          edit {
+              "api_token": 1,
+              "new_token": "Token example",
+              "new_token_scopes": [
+                  "admin",
+                  "read",
+                  "trade"
+              ]
+          }
+    app_delete:
+        - |-
+          edit {
+              "app_delete": 1234
+          }
+    app_get:
+        - |-
+          edit {
+              "app_get": 1234
+          }
+    app_list:
+        - |-
+          edit {
+              "app_list": 1
+          }
+    app_markup_details:
+        - |-
+          edit {
+              "app_markup_details": 1,
+              "description": 1,
+              "app_id": 1234,
+              "client_loginid": "CR12345",
+              "date_from": "2017-08-01 00:00:00",
+              "date_to": "2017-08-31 23:59:59",
+              "limit": 100,
+              "offset": 0,
+              "sort": "ASC",
+              "sort_fields": [
+                  "app_id",
+                  "client_loginid",
+                  "transaction_time"
+              ],
+              "passthrough": {},
+              "req_id": 3
+          }
+    app_markup_statistics:
+        - |-
+          edit {
+              "app_markup_statistics": 1,
+              "date_from": "2022-01-01 00:00:00",
+              "date_to": "2022-01-31 23:59:59",
+              "passthrough": {},
+              "req_id": 4
+          }
+    app_register:
+        - |-
+          edit {
+              "app_register": 1,
+              "appstore": "https://itunes.apple.com/test_app",
+              "github": "https://github.com/test_org/app",
+              "googleplay": "https://play.google.com/store/apps/details?id=test.app",
+              "homepage": "https://test.example.com/",
+              "name": "Test Application",
+              "redirect_uri": "https://test.example.com/redirect",
+              "scopes": [
+                  "read",
+                  "trade"
+              ],
+              "verification_uri": "https://test.example.com/verify"
+          }
+    app_update:
+        - |-
+          edit {
+              "app_update": 999,
+              "appstore": "https://itunes.apple.com/test_app",
+              "github": "https://github.com/test_org/app",
+              "googleplay": "https://play.google.com/store/apps/details?id=test.app",
+              "homepage": "https://test.example.com/",
+              "name": "Test Application",
+              "redirect_uri": "https://test.example.com/redirect",
+              "scopes": [
+                  "read",
+                  "trade"
+              ],
+              "verification_uri": "https://test.example.com/verify"
+          }
+    asset_index:
+        - |-
+          edit {
+              "asset_index": 1
+          }
+    authorize:
+        - |-
+          edit {
+              "authorize": "uw2mk7no3oktoRVVsB4Dz7TQncfABuFDgO95dlxfMxRuPUDz"
+          }
+    balance:
+        - |-
+          edit {
+              "balance": 1,
+              "subscribe": 1
+          }
+    buy:
+        - |-
+          edit {
+              "buy": "uw2mk7no3oktoRVVsB4Dz7TQnFfABuFDgO95dlxfMxRuPUsz",
+              "price": 100
+          }
+    buy_contract_for_multiple_accounts:
+        - |-
+          edit {
+              "buy_contract_for_multiple_accounts": "AE79667A-3561-11E6-880B-19CE0BCBE464",
+              "price": 2.57,
+              "tokens": [
+                  "EWHdv7feGJRmMf1kqv79lgfPiGjLLGV9GHTZFQ345FzJSfNE",
+                  "ONqj76yAnVKnPtc",
+                  "oSpp7ohpGf50tP6",
+                  "uz6OSIcFIcPKK5T"
+              ]
+          }
+    cancel:
+        - |-
+          edit {
+              "cancel": 11542203588
+          }
+    cashier:
+        - |-
+          edit {
+              "cashier": "deposit",
+              "provider": "doughflow",
+              "verification_code": "my_verification_code"
+          }
+    contract_update:
+        - |-
+          edit {
+              "contract_update": 1,
+              "contract_id": 123,
+              "limit_order": {
+                  "take_profit": 1
+              }
+          }
+    contract_update_history:
+        - |-
+          edit {
+              "contract_update_history": 1,
+              "contract_id": 123
+          }
+    contracts_for:
+        - |-
+          edit {
+              "contracts_for": "R_50",
+              "currency": "USD",
+              "landing_company": "svg",
+              "product_type": "basic"
+          }
+    copy_start:
+        - |-
+          edit {
+              "copy_start": "uw2mk7no3oktoRVVsB4Dz7TQnFgrthg"
+          }
+    copy_stop:
+        - |-
+          edit {
+              "copy_stop": "uw2mk7no3oktoRVVsB4Dz7TQnFgrthg"
+          }
+    copytrading_list:
+        - |-
+          edit {
+              "copytrading_list": 1
+          }
+    copytrading_statistics:
+        - |-
+          edit {
+              "copytrading_statistics": 1,
+              "trader_id": "CR1234"
+          }
+    crypto_config:
+        - |-
+          edit {
+              "crypto_config": 1
+          }
+    crypto_estimations:
+        - |-
+          edit {
+              "crypto_estimations": 1,
+              "currency_code": "BTC"
+          }
+    document_upload:
+        - |-
+          edit {
+              "document_upload": 1,
+              "document_format": "JPG",
+              "document_type": "bankstatement",
+              "expected_checksum": "1a79a4d60de6718e8e5b326e338ae533",
+              "file_size": 12345
+          }
+    economic_calendar:
+        - |-
+          edit {
+              "economic_calendar": 1,
+              "currency": "USD",
+              "end_date": 1471996799,
+              "start_date": 1469491200
+          }
+    exchange_rates:
+        - |-
+          edit {
+              "exchange_rates": 1,
+              "base_currency": "USD"
+          }
+    forget:
+        - |-
+          edit {
+              "forget": "d1ee7d0d-3ca9-fbb4-720b-5312d487185b"
+          }
+    forget_all:
+        - |-
+          edit {
+              "forget_all": "ticks"
+          }
+    get_account_status:
+        - |-
+          edit {
+              "get_account_status": 1
+          }
+    get_financial_assessment:
+        - |-
+          edit {
+              "get_financial_assessment": 1
+          }
+    get_limits:
+        - |-
+          edit {
+              "get_limits": 1
+          }
+    get_self_exclusion:
+        - |-
+          edit {
+              "get_self_exclusion": 1
+          }
+    get_settings:
+        - |-
+          edit {
+              "get_settings": 1
+          }
+    identity_verification_document_add:
+        - |-
+          edit {
+              "identity_verification_document_add": 1,
+              "document_additional": "123456789ABCDEF",
+              "document_number": "12345678",
+              "document_type": "passport",
+              "issuing_country": "in"
+          }
+    kyc_auth_status:
+        - |-
+          edit {
+              "kyc_auth_status": 1
+          }
+    landing_company:
+        - |-
+          edit {
+              "landing_company": "id"
+          }
+    landing_company_details:
+        - |-
+          edit {
+              "landing_company_details": "svg"
+          }
+    login_history:
+        - |-
+          edit {
+              "login_history": 1,
+              "limit": 25
+          }
+    logout:
+        - |-
+          edit {
+              "logout": 1
+          }
+    mt5_deposit:
+        - |-
+          edit {
+              "mt5_deposit": 1,
+              "amount": 1000,
+              "from_binary": "CR100001",
+              "to_mt5": "MTR1000"
+          }
+    mt5_get_settings:
+        - |-
+          edit {
+              "mt5_get_settings": 1,
+              "login": "MTR1000"
+          }
+    mt5_login_list:
+        - |-
+          edit {
+              "mt5_login_list": 1
+          }
+    mt5_new_account:
+        - |-
+          edit {
+              "mt5_new_account": 1,
+              "account_type": "demo",
+              "address": "Dummy address",
+              "city": "Valletta",
+              "company": "Deriv Limited",
+              "country": "mt",
+              "email": "test@mailinator.com",
+              "investPassword": "Anoth3r_p4ssword",
+              "leverage": 100,
+              "mainPassword": "C0rrect_p4ssword",
+              "mt5_account_category": "conventional",
+              "mt5_account_type": "financial",
+              "name": "Peter Pan",
+              "phone": "+6123456789",
+              "phonePassword": "AbcDv1234",
+              "state": "Valleta",
+              "zipCode": "VLT 1117"
+          }
+    mt5_password_change:
+        - |-
+          edit {
+              "mt5_password_change": 1,
+              "login": "MTR1000",
+              "new_password": "C0rrect_p4ssword",
+              "old_password": "Abc1234",
+              "password_type": "main"
+          }
+    mt5_password_check:
+        - |-
+          edit {
+              "mt5_password_check": 1,
+              "login": "MTR1000",
+              "password": "abc1234",
+              "password_type": "main"
+          }
+    mt5_password_reset:
+        - |-
+          edit {
+              "mt5_password_reset": 1,
+              "login": "MTD1000",
+              "new_password": "C0rrect_p4ssword",
+              "password_type": "main",
+              "verification_code": "O8eZ2xMq"
+          }
+    mt5_withdrawal:
+        - |-
+          edit {
+              "mt5_withdrawal": 1,
+              "amount": 1000,
+              "from_mt5": "MTR1000",
+              "to_binary": "CR100001"
+          }
+    new_account_maltainvest:
+        - |-
+          edit {
+              "new_account_maltainvest": 1,
+              "accept_risk": 1,
+              "account_opening_reason": "Speculative",
+              "account_turnover": "Less than $25,000",
+              "address_city": "Melbourne",
+              "address_line_1": "20 Broadway Av",
+              "address_line_2": "East Melbourne VIC",
+              "address_postcode": "3002",
+              "address_state": "berlin",
+              "cfd_experience": "Less than a year",
+              "cfd_frequency": "1 - 5 transactions in the past 12 months",
+              "cfd_trading_definition": "Speculate on the price movement.",
+              "citizen": "de",
+              "date_of_birth": "1980-01-31",
+              "education_level": "Secondary",
+              "employment_industry": "Finance",
+              "employment_status": "Self-Employed",
+              "estimated_worth": "$100,000 - $250,000",
+              "first_name": "Peter",
+              "income_source": "Self-Employed",
+              "last_name": "Pan",
+              "leverage_impact_trading": "Leverage lets you open larger positions for a fraction of the trade's value.",
+              "leverage_trading_high_risk_stop_loss": "Close your trade automatically when the loss is more than or equal to a specific amount.",
+              "net_income": "$25,000 - $50,000",
+              "non_pep_declaration": 1,
+              "occupation": "Managers",
+              "phone": "+6123456789",
+              "place_of_birth": "nl",
+              "required_initial_margin": "When opening a Leveraged CFD trade.",
+              "residence": "de",
+              "risk_tolerance": "Yes",
+              "salutation": "Mr",
+              "secret_answer": "Jones",
+              "secret_question": "Mother's maiden name",
+              "source_of_experience": "I trade forex CFDs and other complex financial instruments.",
+              "source_of_wealth": "Company Ownership",
+              "tax_identification_number": "111-222-333",
+              "tax_residence": "de,nl",
+              "trading_experience_financial_instruments": "Less than a year",
+              "trading_frequency_financial_instruments": "1 - 5 transactions in the past 12 months"
+          }
+    new_account_real:
+        - |-
+          edit {
+              "new_account_real": 1,
+              "account_opening_reason": "Speculative",
+              "account_turnover": "Less than $25,000",
+              "address_city": "Melbourne",
+              "address_line_1": "20 Broadway Av",
+              "address_line_2": "East Melbourne VIC",
+              "address_postcode": "3002",
+              "address_state": "Victoria",
+              "date_of_birth": "1980-01-31",
+              "first_name": "Peter",
+              "last_name": "Pan",
+              "non_pep_declaration": 1,
+              "phone": "+6123456789",
+              "place_of_birth": "id",
+              "residence": "au",
+              "salutation": "Mr",
+              "secret_answer": "Jones",
+              "secret_question": "Mother's maiden name",
+              "tax_identification_number": "012142545",
+              "tax_residence": "ar,sg"
+          }
+    new_account_virtual:
+        - |-
+          edit {
+              "new_account_virtual": 1,
+              "type": "trading",
+              "client_password": "C0rrect_p4ssword",
+              "residence": "id",
+              "verification_code": "uoJvVuQ6"
+          }
+    oauth_apps:
+        - |-
+          edit {
+              "oauth_apps": 1
+          }
+    p2p_advert_create:
+        - |-
+          edit {
+              "p2p_advert_create": 1,
+              "description": "Please transfer to account number 1234",
+              "type": "buy",
+              "amount": 100,
+              "max_order_amount": 50,
+              "min_order_amount": 20,
+              "payment_method": "bank_transfer",
+              "rate": 4.25
+          }
+    p2p_advert_info:
+        - |-
+          edit {
+              "p2p_advert_info": 1,
+              "id": "1234"
+          }
+    p2p_advert_list:
+        - |-
+          edit {
+              "p2p_advert_list": 1,
+              "counterparty_type": "buy"
+          }
+    p2p_advert_update:
+        - |-
+          edit {
+              "p2p_advert_update": 1,
+              "id": 1234,
+              "is_active": 0
+          }
+    p2p_advertiser_adverts:
+        - |-
+          edit {
+              "p2p_advertiser_adverts": 1
+          }
+    p2p_advertiser_create:
+        - |-
+          edit {
+              "p2p_advertiser_create": 1,
+              "name": "your_name"
+          }
+    p2p_advertiser_info:
+        - |-
+          edit {
+              "p2p_advertiser_info": 1
+          }
+    p2p_advertiser_list:
+        - |-
+          edit {
+              "p2p_advertiser_list": 1,
+              "trade_partners": 1
+          }
+    p2p_advertiser_payment_methods:
+        - |-
+          edit {
+              "p2p_advertiser_payment_methods": 1,
+              "create": [
+                  {
+                      "account": "1234",
+                      "bank_name": "some_bank",
+                      "method": "bank_transfer"
+                  }
+              ],
+              "delete": [
+                  101,
+                  102
+              ],
+              "update": {
+                  "103": {
+                      "instructions": "phone first"
+                  }
+              }
+          }
+    p2p_advertiser_relations:
+        - |-
+          edit {
+              "p2p_advertiser_relations": 1
+          }
+    p2p_advertiser_update:
+        - |-
+          edit {
+              "p2p_advertiser_update": 1,
+              "is_listed": 0
+          }
+    p2p_chat_create:
+        - |-
+          edit {
+              "p2p_chat_create": 1,
+              "order_id": "1234"
+          }
+    p2p_order_cancel:
+        - |-
+          edit {
+              "p2p_order_cancel": 1,
+              "id": "1234"
+          }
+    p2p_order_confirm:
+        - |-
+          edit {
+              "p2p_order_confirm": 1,
+              "id": "1234"
+          }
+    p2p_order_create:
+        - |-
+          edit {
+              "p2p_order_create": 1,
+              "advert_id": "1234",
+              "amount": 100
+          }
+    p2p_order_dispute:
+        - |-
+          edit {
+              "p2p_order_dispute": 1,
+              "dispute_reason": "seller_not_released",
+              "id": "1234"
+          }
+    p2p_order_info:
+        - |-
+          edit {
+              "p2p_order_info": 1,
+              "id": "1234"
+          }
+    p2p_order_list:
+        - |-
+          edit {
+              "p2p_order_list": 1,
+              "advert_id": "1234"
+          }
+    p2p_order_review:
+        - |-
+          edit {
+              "p2p_order_review": 1,
+              "order_id": "1234",
+              "rating": 4,
+              "recommended": 1
+          }
+    p2p_payment_methods:
+        - |-
+          edit {
+              "p2p_payment_methods": 1
+          }
+    p2p_ping:
+        - |-
+          edit {
+              "p2p_ping": 1
+          }
+    p2p_settings:
+        - |-
+          edit {
+              "p2p_settings": 1
+          }
+    payment_methods:
+        - |-
+          edit {
+              "payment_methods": 1,
+              "country": "id"
+          }
+    paymentagent_create:
+        - |-
+          edit {
+              "paymentagent_create": 1,
+              "affiliate_id": "1231234",
+              "code_of_conduct_approval": 1,
+              "commission_deposit": 2,
+              "commission_withdrawal": 3,
+              "email": "joe@joy.com",
+              "information": "The best person you can find",
+              "payment_agent_name": "Joe Joy",
+              "phone_numbers": [
+                  {
+                      "phone_number": "+923-22-23-13"
+                  }
+              ],
+              "supported_payment_methods": [
+                  {
+                      "payment_method": "MasterCard"
+                  },
+                  {
+                      "payment_method": "Visa"
+                  }
+              ],
+              "urls": [
+                  {
+                      "url": "https://abc.com"
+                  }
+              ]
+          }
+    paymentagent_details:
+        - |-
+          edit {
+              "paymentagent_details": 1
+          }
+    paymentagent_list:
+        - |-
+          edit {
+              "paymentagent_list": "id"
+          }
+    paymentagent_transfer:
+        - |-
+          edit {
+              "paymentagent_transfer": 1,
+              "amount": 1000,
+              "currency": "USD",
+              "transfer_to": "CR100001"
+          }
+    paymentagent_withdraw:
+        - |-
+          edit {
+              "paymentagent_withdraw": 1,
+              "amount": 1000,
+              "currency": "USD",
+              "paymentagent_loginid": "CR100001",
+              "verification_code": "my_verification_code"
+          }
+    paymentagent_withdraw_justification:
+        - |-
+          edit {
+              "paymentagent_withdraw_justification": 1,
+              "message": "my justification"
+          }
+    payout_currencies:
+        - |-
+          edit {
+              "payout_currencies": 1
+          }
+    ping:
+        - |-
+          edit {
+              "ping": 1
+          }
+    portfolio:
+        - |-
+          edit {
+              "portfolio": 1
+          }
+    profit_table:
+        - |-
+          edit {
+              "profit_table": 1,
+              "description": 1,
+              "limit": 25,
+              "offset": 25,
+              "sort": "ASC"
+          }
+    proposal:
+        - |-
+          edit {
+              "proposal": 1,
+              "amount": 100,
+              "barrier": "+0.1",
+              "basis": "payout",
+              "contract_type": "CALL",
+              "currency": "USD",
+              "duration": 60,
+              "duration_unit": "s",
+              "symbol": "R_100"
+          }
+    proposal_open_contract:
+        - |-
+          edit {
+              "proposal_open_contract": 1,
+              "contract_id": 11111111,
+              "subscribe": 1
+          }
+    reality_check:
+        - |-
+          edit {
+              "reality_check": 1
+          }
+    residence_list:
+        - |-
+          edit {
+              "residence_list": 1
+          }
+    revoke_oauth_app:
+        - |-
+          edit {
+              "revoke_oauth_app": 1234
+          }
+    sell:
+        - |-
+          edit {
+              "sell": 11542203588,
+              "price": 500
+          }
+    sell_contract_for_multiple_accounts:
+        - |-
+          edit {
+              "sell_contract_for_multiple_accounts": 1,
+              "price": 500,
+              "shortcode": "CALL_R_50_5_1488181433_1488181553_S0P_0",
+              "tokens": [
+                  "FrvservuIFEf1",
+                  "JUBibibkebiuwbeCNEc"
+              ]
+          }
+    sell_expired:
+        - |-
+          edit {
+              "sell_expired": 1
+          }
+    set_account_currency:
+        - |-
+          edit {
+              "set_account_currency": "USD"
+          }
+    set_financial_assessment:
+        - |-
+          edit {
+              "set_financial_assessment": 1,
+              "financial_information": {
+                  "account_turnover": "Less than $25,000",
+                  "education_level": "Secondary",
+                  "employment_industry": "Finance",
+                  "employment_status": "Self-Employed",
+                  "estimated_worth": "$100,000 - $250,000",
+                  "income_source": "Self-Employed",
+                  "net_income": "$25,000 - $50,000",
+                  "occupation": "Managers",
+                  "source_of_wealth": "Company Ownership"
+              },
+              "trading_experience": {
+                  "binary_options_trading_experience": "1-2 years",
+                  "binary_options_trading_frequency": "40 transactions or more in the past 12 months",
+                  "cfd_trading_experience": "Over 3 years",
+                  "cfd_trading_frequency": "6-10 transactions in the past 12 months",
+                  "forex_trading_experience": "Over 3 years",
+                  "forex_trading_frequency": "0-5 transactions in the past 12 months",
+                  "other_instruments_trading_experience": "Over 3 years",
+                  "other_instruments_trading_frequency": "6-10 transactions in the past 12 months"
+              },
+              "trading_experience_regulated": {
+                  "cfd_experience": "Less than a year",
+                  "cfd_frequency": "1 - 5 transactions in the past 12 months",
+                  "cfd_trading_definition": "Speculate on the price movement.",
+                  "leverage_impact_trading": "Leverage lets you open larger positions for a fraction of the trade's value.",
+                  "leverage_trading_high_risk_stop_loss": "Close your trade automatically when the loss is more than or equal to a specific amount.",
+                  "required_initial_margin": "When opening a Leveraged CFD trade.",
+                  "risk_tolerance": "Yes",
+                  "source_of_experience": "I have an academic degree, professional certification, and/or work experience.",
+                  "trading_experience_financial_instruments": "Less than a year",
+                  "trading_frequency_financial_instruments": "1 - 5 transactions in the past 12 months"
+              }
+          }
+    set_self_exclusion:
+        - |-
+          edit {
+              "set_self_exclusion": 1,
+              "exclude_until": "2020-01-01",
+              "max_30day_deposit": 1000,
+              "max_30day_losses": 100000,
+              "max_30day_turnover": 1000,
+              "max_7day_deposit": 100,
+              "max_7day_losses": 100000,
+              "max_7day_turnover": 1000,
+              "max_deposit": 10,
+              "max_losses": 100000,
+              "max_turnover": 1000,
+              "session_duration_limit": 3600,
+              "timeout_until": 1497357184
+          }
+    set_settings:
+        - |-
+          edit {
+              "set_settings": 1,
+              "account_opening_reason": "Speculative",
+              "address_city": "Test City",
+              "address_line_1": "Test Address Line 1",
+              "address_line_2": "Test Address Line 2",
+              "address_postcode": "123456",
+              "allow_copiers": 1,
+              "email_consent": 0,
+              "employment_status": "Employed",
+              "phone": "+15417543010",
+              "place_of_birth": "ar",
+              "preferred_language": "EN",
+              "request_professional_status": 1,
+              "tax_identification_number": "987654321",
+              "tax_residence": "hk"
+          }
+    statement:
+        - |-
+          edit {
+              "statement": 1,
+              "description": 1,
+              "limit": 100,
+              "offset": 25
+          }
+    states_list:
+        - |-
+          edit {
+              "states_list": "id"
+          }
+    ticks:
+        - |-
+          edit {
+              "ticks": "R_50",
+              "subscribe": 1
+          }
+    ticks_history:
+        - |-
+          edit {
+              "ticks_history": "R_50",
+              "adjust_start_time": 1,
+              "count": 10,
+              "end": "latest",
+              "start": 1,
+              "style": "ticks"
+          }
+    time:
+        - |-
+          edit {
+              "time": 1
+          }
+    tnc_approval:
+        - |-
+          edit {
+              "tnc_approval": 1
+          }
+    topup_virtual:
+        - |-
+          edit {
+              "topup_virtual": 1
+          }
+    trading_durations:
+        - |-
+          edit {
+              "trading_durations": 1
+          }
+    trading_platform_investor_password_reset:
+        - |-
+          edit {
+              "trading_platform_investor_password_reset": 1,
+              "account_id": "MTR1000",
+              "new_password": "InvestPwd123@!",
+              "platform": "mt5",
+              "verification_code": "abCD0199"
+          }
+    trading_platform_password_reset:
+        - |-
+          edit {
+              "trading_platform_password_reset": 1,
+              "new_password": "C0rrect_p4ssword",
+              "platform": "dxtrade",
+              "verification_code": "abCD0199"
+          }
+    trading_servers:
+        - |-
+          edit {
+              "trading_servers": 1,
+              "platform": "mt5"
+          }
+    trading_times:
+        - |-
+          edit {
+              "trading_times": "2015-09-14"
+          }
+    transaction:
+        - |-
+          edit {
+              "transaction": 1,
+              "subscribe": 1
+          }
+    transfer_between_accounts:
+        - |-
+          edit {
+              "transfer_between_accounts": 1,
+              "account_from": "MLT100",
+              "account_to": "MF100",
+              "amount": 1000,
+              "currency": "EUR"
+          }
+    unsubscribe_email:
+        - |-
+          edit {
+              "unsubscribe_email": 1,
+              "binary_user_id": "90000216",
+              "checksum": "93917bec9d69a81e47987d6c4c0c7168456e86a12e1d66e2cd75e477258b86e4"
+          }
+    verify_email:
+        - |-
+          edit {
+              "verify_email": "test@mailinator.com",
+              "type": "account_opening"
+          }
+    verify_email_cellxpert:
+        - |-
+          edit {
+              "verify_email_cellxpert": "test@mailinator.com",
+              "type": "partner_account_opening"
+          }
+    website_status:
+        - |-
+          edit {
+              "website_status": 1
+          }

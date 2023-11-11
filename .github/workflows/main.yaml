@@ -1,0 +1,28 @@
+name: Macro Updater 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * *"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-go@v4
+        with:
+          go-version: 'stable'
+
+      - name: Display Go version
+        run: go version
+      - name: generate schema
+        run: make
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: user_info
+          message: 'Updates Deriv API requests'
+          add: '*.go'
