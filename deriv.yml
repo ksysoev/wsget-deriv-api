@@ -4,6 +4,11 @@ domains:
     - binaryws.com
     - deriv.dev
 macro:
+    account_list:
+        - |-
+          edit {
+              "account_list": 1
+          }
     active_symbols:
         - |-
           edit {
