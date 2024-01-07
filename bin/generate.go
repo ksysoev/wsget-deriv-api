@@ -10,7 +10,7 @@ import (
 
 const (
 	OutputFile         = "./deriv.yml"
-	SchemaPath         = "./deriv-developers-portal/config/v3/"
+	SchemaPath         = "./deriv-api-docs/config/v3/"
 	RequestExampleFile = "example.json"
 	FormatVersion      = "1"
 )

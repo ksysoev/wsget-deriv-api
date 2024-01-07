@@ -4,10 +4,10 @@
 generate_all: clone generate clean
 
 clone:
-	git clone https://github.com/binary-com/deriv-developers-portal.git
+	git clone https://github.com/binary-com/deriv-api-docs.git
 
 generate: 
 	go run bin/generate.go
 
 clean:
-	rm -rf deriv-developers-portal
+	rm -rf deriv-api-docs
