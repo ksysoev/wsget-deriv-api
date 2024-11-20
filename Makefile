@@ -4,7 +4,7 @@
 generate_all: clone generate clean
 
 clone:
-	git clone https://github.com/binary-com/deriv-api-docs.git
+	git clone https://github.com/deriv-com/deriv-api-docs.git
 
 generate: 
 	go run bin/generate.go
