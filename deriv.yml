@@ -148,6 +148,13 @@ macro:
               "provider": "doughflow",
               "verification_code": "my_verification_code"
           }
+    confirm_email:
+        - |-
+          edit {
+              "confirm_email": 1,
+              "email_consent": 1,
+              "verification_code": "ExampleVerificationCode"
+          }
     contract_update:
         - |-
           edit {
@@ -170,6 +177,11 @@ macro:
               "currency": "USD",
               "landing_company": "svg",
               "product_type": "basic"
+          }
+    contracts_for_company:
+        - |-
+          edit {
+              "contracts_for_company": 1
           }
     copy_start:
         - |-
@@ -391,6 +403,7 @@ macro:
               "employment_industry": "Finance",
               "employment_status": "Self-Employed",
               "estimated_worth": "$100,000 - $250,000",
+              "fatca_declaration": 1,
               "first_name": "Peter",
               "income_source": "Self-Employed",
               "last_name": "Pan",
@@ -411,6 +424,8 @@ macro:
               "source_of_wealth": "Company Ownership",
               "tax_identification_number": "111-222-333",
               "tax_residence": "de,nl",
+              "tin_skipped": 0,
+              "tnc_acceptance": 1,
               "trading_experience_financial_instruments": "Less than a year",
               "trading_frequency_financial_instruments": "1 - 5 transactions in the past 12 months"
           }
@@ -426,6 +441,7 @@ macro:
               "address_postcode": "3002",
               "address_state": "Victoria",
               "date_of_birth": "1980-01-31",
+              "fatca_declaration": 1,
               "first_name": "Peter",
               "last_name": "Pan",
               "non_pep_declaration": 1,
@@ -436,7 +452,9 @@ macro:
               "secret_answer": "Jones",
               "secret_question": "Mother's maiden name",
               "tax_identification_number": "012142545",
-              "tax_residence": "ar,sg"
+              "tax_residence": "ar,sg",
+              "tin_skipped": 0,
+              "tnc_acceptance": 1
           }
     new_account_virtual:
         - |-
@@ -543,6 +561,12 @@ macro:
               "p2p_chat_create": 1,
               "order_id": "1234"
           }
+    p2p_country_list:
+        - |-
+          edit {
+              "p2p_country_list": 1,
+              "country": "id"
+          }
     p2p_order_cancel:
         - |-
           edit {
@@ -603,6 +627,25 @@ macro:
         - |-
           edit {
               "p2p_settings": 1
+          }
+    partner_accounts:
+        - |-
+          edit {
+              "partner_accounts": 1
+          }
+    partner_settings:
+        - |-
+          edit {
+              "partner_settings": 1
+          }
+    partner_settings_update:
+        - |-
+          edit {
+              "partner_settings_update": 1,
+              "company_name": "XYZ New Corp",
+              "company_registration_no": "ABC322",
+              "partner_type": "company",
+              "website": "www.newxyz.com"
           }
     payment_methods:
         - |-
@@ -831,7 +874,8 @@ macro:
               "preferred_language": "EN",
               "request_professional_status": 1,
               "tax_identification_number": "987654321",
-              "tax_residence": "hk"
+              "tax_residence": "hk",
+              "tin_skipped": 0
           }
     statement:
         - |-
@@ -852,6 +896,13 @@ macro:
               "ticks": "R_50",
               "subscribe": 1
           }
+    ticks_batch:
+        - |-
+          edit {
+              "ticks_batch": 1,
+              "market": "forex",
+              "subscribe": 1
+          }
     ticks_history:
         - |-
           edit {
@@ -866,6 +917,12 @@ macro:
         - |-
           edit {
               "time": 1
+          }
+    tin_validations:
+        - |-
+          edit {
+              "tin_validations": 1,
+              "tax_residence": "ke"
           }
     tnc_approval:
         - |-
@@ -898,6 +955,11 @@ macro:
               "new_password": "C0rrect_p4ssword",
               "platform": "dxtrade",
               "verification_code": "abCD0199"
+          }
+    trading_platform_status:
+        - |-
+          edit {
+              "trading_platform_status": 1
           }
     trading_servers:
         - |-
@@ -938,11 +1000,10 @@ macro:
               "verify_email": "test@mailinator.com",
               "type": "account_opening"
           }
-    verify_email_cellxpert:
+    website_config:
         - |-
           edit {
-              "verify_email_cellxpert": "test@mailinator.com",
-              "type": "partner_account_opening"
+              "website_config": 1
           }
     website_status:
         - |-
