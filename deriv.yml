@@ -480,7 +480,7 @@ macro:
               "last_name": "Pan",
               "partner_type": "individual",
               "phone": "+10023456789",
-              "provider": "dynamicworks",
+              "provider": "myaffiliate",
               "residence": "au",
               "salutation": "Mr",
               "secret_answer": "Jones",
