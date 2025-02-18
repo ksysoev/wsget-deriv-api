@@ -669,6 +669,7 @@ macro:
               "company_name": "XYZ New Corp",
               "company_registration_no": "ABC322",
               "partner_type": "company",
+              "provider": "dynamicworks",
               "website": "www.newxyz.com"
           }
     payment_methods:
