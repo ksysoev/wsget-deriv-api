@@ -238,6 +238,11 @@ macro:
               "exchange_rates": 1,
               "base_currency": "USD"
           }
+    financial_assessment_questions:
+        - |-
+          edit {
+              "financial_assessment_questions": 1
+          }
     forget:
         - |-
           edit {
