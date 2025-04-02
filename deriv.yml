@@ -152,6 +152,7 @@ macro:
         - |-
           edit {
               "confirm_email": 1,
+              "created_for": "account_opening",
               "email_consent": 1,
               "verification_code": "ExampleVerificationCode"
           }
