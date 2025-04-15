@@ -239,6 +239,13 @@ macro:
               "exchange_rates": 1,
               "base_currency": "USD"
           }
+    exchange_verification_code:
+        - |-
+          edit {
+              "exchange_verification_code": "1",
+              "type": "account_opening",
+              "verification_code": "abCD0123"
+          }
     financial_assessment_questions:
         - |-
           edit {
