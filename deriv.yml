@@ -510,12 +510,13 @@ macro:
               "address_line_2": "East Melbourne VIC",
               "address_postcode": "3002",
               "address_state": "Victoria",
+              "calling_country_code": "61",
               "currency": "USD",
               "date_of_birth": "1980-01-31",
               "first_name": "Peter",
               "last_name": "Pan",
               "partner_type": "individual",
-              "phone": "+10023456789",
+              "phone": "10023456789",
               "provider": "myaffiliate",
               "residence": "au",
               "salutation": "Mr",
@@ -755,7 +756,7 @@ macro:
               "payment_agent_name": "Joe Joy",
               "phone_numbers": [
                   {
-                      "phone_number": "+923-22-23-13"
+                      "phone_number": "923222313"
                   }
               ],
               "supported_payment_methods": [
