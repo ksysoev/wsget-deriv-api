@@ -156,6 +156,16 @@ macro:
               "email_consent": 1,
               "verification_code": "ExampleVerificationCode"
           }
+    connect_copy:
+        - |-
+          edit {
+              "connect_copy": 1
+          }
+    connect_status:
+        - |-
+          edit {
+              "connect_status": 1
+          }
     contract_update:
         - |-
           edit {
