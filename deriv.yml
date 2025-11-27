@@ -768,6 +768,12 @@ macro:
               "provider": "dynamicworks",
               "website": "www.newxyz.com"
           }
+    partner_toolkit:
+        - |-
+          edit {
+              "partner_toolkit": 1,
+              "action_type": "get_postly_redirect_url"
+          }
     payment_methods:
         - |-
           edit {
