@@ -20,7 +20,7 @@ jobs:
         run: make
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           default_author: user_info
           message: "Updates Deriv API requests"
