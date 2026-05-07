@@ -484,15 +484,6 @@ macro:
               "tin_skipped": 0,
               "tnc_acceptance": 1
           }
-    new_account_virtual:
-        - |-
-          edit {
-              "new_account_virtual": 1,
-              "type": "trading",
-              "client_password": "C0rrect_p4ssword",
-              "residence": "id",
-              "verification_code": "uoJvVuQ6"
-          }
     new_account_wallet:
         - |-
           edit {
